@@ -14,7 +14,55 @@
 
 <body>
 
-  Bill
+  <section class="header">
+  </section>
+  <section class="card">
+    <section class="card-item calc">
+      <div id="billgroup">
+        <label for="bill" id="billlabel">Bill</label>
+        <div class="input">
+          <img src="./images/icon-dollar.svg" alt="dollar">
+          <input type="text" id="bill">
+        </div>
+      </div>
+      <div id="tipgroup">
+        <span>Select Tip %</span>
+        <div>
+          <button>5%</button>
+          <button>10%</button>
+        </div>
+        <div>
+          <button>15%</button>
+          <button>25%</button>
+        </div>
+        <div>
+          <button>50%</button>
+          <button>Custom</button>
+        </div>
+      </div>
+      <div id="peoplegroup">
+        <label for="people">Number of People</label>
+        <div class="input">
+          <img src="./images/icon-person.svg" alt="person">
+          <input type="text" id="people">
+        </div>
+      </div>
+    </section>
+    <section class="card-item result">
+      <div>
+        <label>Tip Amount
+          / person</label>
+        <span id="tip">$</span>
+      </div>
+      <div>
+        <label>Total
+          / person</label>
+        <span id="bill">$</span>
+      </div>
+      <button>Reset</button>
+    </section>
+  </section>
+  <!-- Bill
 
   Select Tip %
   5%
@@ -32,7 +80,7 @@
   Total
   / person
 
-  Reset
+  Reset -->
 
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.

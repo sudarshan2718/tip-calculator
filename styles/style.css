@@ -7,8 +7,107 @@
   margin: 0;
 }
 
+html {
+  width: 100vw;
+  height: 100vh;
+}
+
 body {
   font-family: "Space Mono", monospace;
+  width: 100%;
+  height: 100%;
+  background: #c5e4e7;
+}
+
+.header {
+  background-image: url(../images/logo.svg);
+  min-height: 9rem;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.card {
+  border-radius: 1rem 1rem 0 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: white;
+  padding: 1.3rem 2rem;
+}
+
+.card .calc label, .card .calc span {
+  font-weight: 700;
+  color: #7f9c9f;
+}
+
+.card .calc .input {
+  padding: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #f4fafa;
+  height: 2.5rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 2px;
+}
+
+.card .calc .input input {
+  margin-left: 1rem;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  background-color: #f4fafa;
+  border: none;
+}
+
+.card .calc .input input[type="text"] {
+  font-size: 1rem;
+  font-family: inherit;
+  font-weight: 200;
+}
+
+.card .calc .input input:focus {
+  outline: none;
+}
+
+.card .calc #billgroup {
+  margin-bottom: 2rem;
+}
+
+.card .calc #tipgroup {
+  margin-bottom: 2rem;
+}
+
+.card .calc #tipgroup button {
+  margin-top: 1rem;
+  margin-right: 5px;
+  width: 102px;
+  height: 35px;
+  background-color: #00494d;
+  color: white;
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 1rem;
+}
+
+.card .result {
+  background-color: #00494d;
+  border-radius: 1rem;
+  margin-top: 3rem;
+}
+
+.card .result button {
+  background-color: #26c0ab;
+}
+
+.card .result label {
+  color: white;
 }
 
 .attribution {
