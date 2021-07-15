@@ -16,12 +16,12 @@ body {
   font-family: "Space Mono", monospace;
   width: 100%;
   height: 100%;
-  background: #c5e4e7;
+  background-color: #c5e4e7;
 }
 
 .header {
   background-image: url(../images/logo.svg);
-  min-height: 9rem;
+  min-height: 8rem;
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -36,7 +36,11 @@ body {
       -ms-flex-direction: column;
           flex-direction: column;
   background-color: white;
-  padding: 1.3rem 2rem;
+  padding: 1.5rem 2rem;
+}
+
+.card .calc {
+  width: 100%;
 }
 
 .card .calc label, .card .calc span {
@@ -45,16 +49,14 @@ body {
 }
 
 .card .calc .input {
-  padding: 1rem;
+  padding: 0.5rem 1rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   background-color: #f4fafa;
-  height: 2.5rem;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-top: 2px;
 }
 
 .card .calc .input input {
@@ -69,7 +71,7 @@ body {
 .card .calc .input input[type="text"] {
   font-size: 1rem;
   font-family: inherit;
-  font-weight: 200;
+  font-weight: 700;
 }
 
 .card .calc .input input:focus {
@@ -78,36 +80,80 @@ body {
 
 .card .calc #billgroup {
   margin-bottom: 2rem;
+  width: 100%;
+}
+
+.card .calc #peoplegroup {
+  width: 100%;
 }
 
 .card .calc #tipgroup {
   margin-bottom: 2rem;
+  width: 100%;
 }
 
-.card .calc #tipgroup button {
-  margin-top: 1rem;
-  margin-right: 5px;
-  width: 102px;
-  height: 35px;
-  background-color: #00494d;
+.card .calc #tipgroup div {
+  margin: 0.5rem 0;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  -webkit-column-gap: 1rem;
+          column-gap: 1rem;
+  row-gap: 1rem;
+}
+
+.card .calc #tipgroup div button {
+  height: 2.5rem;
   color: white;
+  background-color: #00494d;
   font-family: inherit;
   font-weight: 500;
   font-size: 1rem;
+  border-radius: 0.5rem;
+  border: none;
 }
 
 .card .result {
   background-color: #00494d;
   border-radius: 1rem;
-  margin-top: 3rem;
+  padding: 2rem 1rem 1rem;
+  margin-top: 1.5rem;
 }
 
 .card .result button {
   background-color: #26c0ab;
+  color: #00494d;
+  width: 100%;
+  height: 2.5rem;
+  margin-top: 1rem;
+  font-weight: 900;
+  border-radius: 0.5rem;
+  border: none;
 }
 
-.card .result label {
+.card .result .outer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 1rem;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.card .result .outer label {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #26c0ab;
+}
+
+.card .result h4 {
   color: white;
+}
+
+.card .result h5 {
+  color: #7f9c9f;
 }
 
 .attribution {

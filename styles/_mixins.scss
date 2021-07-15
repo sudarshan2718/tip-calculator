@@ -1,0 +1,30 @@
+@mixin igroup($font-weight, $font-size, $ml, $bg, $vertical: 0.5rem, $horizontal: 1rem) {
+    padding: $vertical $horizontal;
+    display: flex;
+    background-color: $bg;
+    align-items: center;
+    input {
+        margin-left: $ml;
+        flex-grow: 1;
+        background-color: $bg;
+        border: none;
+    }
+    input[type="text"] {
+        font-size: $font-size;
+        font-family: inherit;
+        font-weight: $font-weight;
+    }
+    input:focus {
+        outline: none;
+    }
+}
+// button(2.5rem, white, $very-dark-cyan, 200, 1rem, 0.5rem)
+@mixin button_style($height, $font-color, $font-weight, $font-size, $border-radius, $font: inherit) {
+    height: $height;
+    color: $font-color;
+    background-color: $very-dark-cyan;
+    font-family: $font;
+    font-weight: $font-color;
+    font-size: $font-size;
+    border-radius: $border-radius;
+}

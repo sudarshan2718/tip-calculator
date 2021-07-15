@@ -13,10 +13,12 @@
 </head>
 
 <body>
-
+  <!-- header -->
   <section class="header">
   </section>
+  <!-- card -->
   <section class="card">
+    <!-- calc -->
     <section class="card-item calc">
       <div id="billgroup">
         <label for="bill" id="billlabel">Bill</label>
@@ -30,12 +32,8 @@
         <div>
           <button>5%</button>
           <button>10%</button>
-        </div>
-        <div>
           <button>15%</button>
           <button>25%</button>
-        </div>
-        <div>
           <button>50%</button>
           <button>Custom</button>
         </div>
@@ -48,39 +46,29 @@
         </div>
       </div>
     </section>
+    <!-- calc -->
+    <!-- result -->
     <section class="card-item result">
-      <div>
-        <label>Tip Amount
-          / person</label>
-        <span id="tip">$</span>
+      <div class="outer">
+        <div class="inner">
+          <h4>Tip Amount</h4>
+          <h5>/ person</h5>
+        </div>
+        <label class="output">$4.5</label>
       </div>
-      <div>
-        <label>Total
-          / person</label>
-        <span id="bill">$</span>
+      <div class="outer">
+        <div class="inner">
+          <h4>Total</h4>
+          <h5>/ person</h5>
+        </div>
+        <label class="output">$8.9</label>
       </div>
-      <button>Reset</button>
+      <button>RESET</button>
     </section>
+    <!-- result -->
   </section>
-  <!-- Bill
+  <!-- card -->
 
-  Select Tip %
-  5%
-  10%
-  15%
-  25%
-  50%
-  Custom
-
-  Number of People
-
-  Tip Amount
-  / person
-
-  Total
-  / person
-
-  Reset -->
 
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.

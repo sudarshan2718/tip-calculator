@@ -1,5 +1,5 @@
-@import 'variables';
-
+@import './variables';
+@import './mixins';
 
 *,
 *::after,
@@ -17,11 +17,12 @@ body {
     font-family: "Space Mono", monospace;
     width: 100%;
     height: 100%;
-    background: $light-grayish-cyan;
+    background-color: $light-grayish-cyan;
+
 }
 .header{
     background-image: url(../images/logo.svg);
-    min-height: 9rem;
+    min-height: 8rem;
     background-repeat: no-repeat;
     background-position: center;
 }
@@ -30,57 +31,46 @@ body {
     border-radius: 1rem 1rem 0 0;
     display: flex;
     flex-direction: column;
-    background-color: $white;
-    padding: 1.3rem 2rem;
+    background-color:$white;
+    padding: 1.5rem 2rem;
     .calc{
-
+        width: 100%;
+        
         label,span{
             font-weight: 700;
             color: $dark-grayish-cyan-2;
         }
         
         .input{
-            padding: 1rem;
-            display: flex;
-            background-color: $light-grayish-cyan-2;
-            height: 2.5rem;
-            align-items: center;
-            margin-top: 2px;
-            
-            input{
-                
-                margin-left: 1rem;
-                flex-grow: 1;
-                background-color: $light-grayish-cyan-2;
-                border: none;
-            }
-            input[type="text"]{
-                font-size: 1rem;
-                font-family: inherit;
-                font-weight: 200;
-            }
-            input:focus{
-                outline: none;
-            }
-
+            @include igroup(700,1rem,1rem,$light-grayish-cyan-2);
         }
 
         #billgroup{
             margin-bottom: 2rem;
+            width: 100%;
+        }
+        #peoplegroup{
+            width: 100%;
         }
         #tipgroup{
             margin-bottom: 2rem;
-            button{
-                margin-top: 1rem;
-                margin-right: 5px;
-                width: 102px; 
-                height: 35px;
-                background-color: $very-dark-cyan;
-                color: white;
-                font-family: inherit;
-                font-weight: 500;
-                font-size: 1rem;
-                
+            width: 100%;
+            div{
+                margin: 0.5rem 0;
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                column-gap: 1rem;
+                row-gap: 1rem;
+                button{
+                    height: 2.5rem;
+                    color: $white;
+                    background-color: $very-dark-cyan;
+                    font-family: inherit;
+                    font-weight: 500;
+                    font-size: 1rem;
+                    border-radius: 0.5rem;
+                   border:none;
+                }
             }
         }
     }
@@ -88,13 +78,37 @@ body {
     .result{
         background-color: $very-dark-cyan;
         border-radius: 1rem;
+        padding: 2rem 1rem 1rem;
+        
+        
         button{
             background-color: $strong-cyan;
+            color: $very-dark-cyan;
+            width: 100%;
+            height: 2.5rem;
+            margin-top: 1rem;
+            font-weight:900;
+            
+            border-radius: 0.5rem;
+            border:none;
         }
-        label{
+        .outer{
+            display: flex;
+            margin-bottom: 1rem;
+            justify-content: space-between;
+            label{
+                font-size: 2rem;
+                font-weight: 700;
+                color: $strong-cyan;
+            }
+        }
+        h4{
             color: $white;
         }
-        margin-top: 3rem;
+        h5{
+            color: $dark-grayish-cyan-2;
+        }
+        margin-top: 1.5rem;
     }
     
 }
