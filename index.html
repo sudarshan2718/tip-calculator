@@ -9,6 +9,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./styles/style.css">
+  <link rel="stylesheet" href="./styles/classlists.css">
   <title>Frontend Mentor | Tip calculator app</title>
 </head>
 
@@ -22,58 +23,64 @@
     <section class="card-item calc">
       <div id="billgroup">
         <label for="bill" id="billlabel">Bill</label>
+        <span class="warning">Can't be zero</span>
         <div class="input">
           <img src="./images/icon-dollar.svg" alt="dollar">
-          <input type="text" id="bill">
+          <input type="text" id="bill" placeholder="0">
         </div>
       </div>
       <div id="tipgroup">
         <span>Select Tip %</span>
         <div>
-          <button>5%</button>
-          <button>10%</button>
-          <button>15%</button>
-          <button>25%</button>
-          <button>50%</button>
-          <button>Custom</button>
+          <button class="percent">5%</button>
+          <button class="percent">10%</button>
+          <button class="percent">15%</button>
+          <button class="percent">25%</button>
+          <button class="percent">50%</button>
+          <input type="text" placeholder="Custom" id="custom">
         </div>
       </div>
       <div id="peoplegroup">
         <label for="people">Number of People</label>
+        <span class="warning">Can't be zero</span>
         <div class="input">
           <img src="./images/icon-person.svg" alt="person">
-          <input type="text" id="people">
+          <input type="text" id="people" placeholder="0">
         </div>
       </div>
     </section>
     <!-- calc -->
     <!-- result -->
     <section class="card-item result">
-      <div class="outer">
-        <div class="inner">
-          <h4>Tip Amount</h4>
-          <h5>/ person</h5>
+      <div>
+        <div class="outer">
+          <div class="inner">
+            <h4>Tip Amount</h4>
+            <h5>/ person</h5>
+          </div>
+          <label class="output" id="tipamount">$0.00</label>
         </div>
-        <label class="output">$4.5</label>
-      </div>
-      <div class="outer">
-        <div class="inner">
-          <h4>Total</h4>
-          <h5>/ person</h5>
+        <div class="outer">
+          <div class="inner">
+            <h4>Total</h4>
+            <h5>/ person</h5>
+          </div>
+          <label class="output" id="total">$0.00</label>
         </div>
-        <label class="output">$8.9</label>
       </div>
-      <button>RESET</button>
+      <button id="reset">RESET</button>
     </section>
     <!-- result -->
   </section>
   <!-- card -->
 
 
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-    Coded by <a href="https://twitter.com/Sudarshan2718">Sudarshan Vemarapu</a>.
-  </div>
+  <footer>
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+      <br>Coded by <a href="https://twitter.com/Sudarshan2718">Sudarshan Vemarapu</a>.
+    </div>
+  </footer>
   <script src="./scripts/app.js"></script>
 </body>
 
