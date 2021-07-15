@@ -58,7 +58,6 @@ body {
         
         .input{
             @include igroup(700,1.5rem,1rem,$light-grayish-cyan-2);
-            
         }
 
         #billgroup{
@@ -72,7 +71,7 @@ body {
             margin-bottom: 2rem;
             width: 100%;
             
-            div{
+            #btngroup {
                 margin: 0.5rem 0;
                 display: grid;
                 grid-template-columns: 1fr 1fr;
@@ -96,9 +95,14 @@ body {
                         background-color: $strong-cyan;
                     }
                 }
+                #custom_div{
+                    width: 100%;
+                    border-radius: 0.5rem;
+                }
                 input{
                     height: 2.5rem;
                     border-radius: 0.5rem;
+                    
                     border: none;
                     width: 100%;
                     
@@ -175,7 +179,7 @@ body {
         }
     }
     @media (min-width: 1440px) {
-        width: 50%;
+        width: 45%;
     }
 }
 

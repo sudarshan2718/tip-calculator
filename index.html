@@ -23,7 +23,7 @@
     <section class="card-item calc">
       <div id="billgroup">
         <label for="bill" id="billlabel">Bill</label>
-        <span class="warning">Can't be zero</span>
+        <span class="warning"></span>
         <div class="input">
           <img src="./images/icon-dollar.svg" alt="dollar">
           <input type="text" id="bill" placeholder="0">
@@ -31,18 +31,20 @@
       </div>
       <div id="tipgroup">
         <span>Select Tip %</span>
-        <div>
+        <div id="btngroup">
           <button class="percent">5%</button>
           <button class="percent">10%</button>
           <button class="percent">15%</button>
           <button class="percent">25%</button>
           <button class="percent">50%</button>
-          <input type="text" placeholder="Custom" id="custom">
+          <div id="custom_div">
+            <input type="text" placeholder="Custom" id="custom">
+          </div>
         </div>
       </div>
       <div id="peoplegroup">
         <label for="people">Number of People</label>
-        <span class="warning">Can't be zero</span>
+        <span class="warning"></span>
         <div class="input">
           <img src="./images/icon-person.svg" alt="person">
           <input type="text" id="people" placeholder="0">
