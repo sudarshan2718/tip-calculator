@@ -89,4 +89,10 @@ custom.addEventListener('keyup',customTip);
 reset.addEventListener('click', resetAll)
 updateBill();
 
+// warning signs
+// 1. when alphabets are entered
+// 2. non-positive integers are entered
 
+// success signs
+// 1. non-negative integers are entered
+// when clicked on card, success signs should go off
