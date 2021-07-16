@@ -115,12 +115,13 @@ for (let btn of percent_btns) {
 function billSigns() {
 
     let billValue = Number.parseFloat(bill.value)
-    console.log(billValue)
+    
     if (bill.value.length > 0) {
         if (billValue) {
             
             if (billValue > 0) {
                 // flag sucess
+                billwarning_message.style.display = "none"
                 if (!billSuccess) {
                     billSuccess = billgroup.classList.toggle('successborder');
                 }
@@ -148,6 +149,14 @@ function billSigns() {
             if (!billWarning) {
                 billWarning = billgroup.classList.toggle('warnborder');
             }
+        }
+    }else{
+        billwarning_message.style.display = "none"
+        if (billSuccess) {
+            billSuccess = billgroup.classList.toggle('successborder');
+        }
+        if (billWarning) {
+            billWarning = billgroup.classList.toggle('warnborder');
         }
     }
 }
@@ -177,6 +186,7 @@ function peopleSigns(){
             }
         } else {
             // flag error
+
             peoplewarning_message.innerHTML="not a number"
             peoplewarning_message.style.display="inline"
             if (peopleSuccess) {
@@ -185,6 +195,14 @@ function peopleSigns(){
             if (!peopleWarning) {
                 peopleWarning = peoplegroup.classList.toggle('warnborder');
             }
+        }
+    }else{
+        peoplewarning_message.style.display="inline"
+        if (peopleSuccess) {
+            peopleSuccess = peoplegroup.classList.toggle('successborder');
+        }
+        if (peopleWarning) {
+            peopleWarning = peoplegroup.classList.toggle('warnborder');
         }
     }
 }
