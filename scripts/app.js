@@ -1,10 +1,3 @@
-// id=bill input
-// id=people input
-// class=percent button
-// id=custom input
-// id=reset button
-// id=tipamount label
-// id=total label
 let bill = document.querySelector('#bill')
 let people = document.querySelector('#people')
 let custom = document.querySelector('#custom')
@@ -18,12 +11,14 @@ let peoplegroup = document.querySelectorAll('.input')[1]
 let billwarning_message = document.querySelectorAll('.warning')[0]
 let peoplewarning_message = document.querySelectorAll('.warning')[1]
 let card = document.querySelector('.card')
+
 billgroup.classList.add('successborder')
 billgroup.classList.add('warnborder')
 peoplegroup.classList.add('successborder')
 peoplegroup.classList.add('warnborder')
 custom_div.classList.add('successborder')
 custom_div.classList.add('warnborder')
+
 let billSuccess = billgroup.classList.toggle('successborder')
 let billWarning = billgroup.classList.toggle('warnborder')
 let peopleSuccess = peoplegroup.classList.toggle('successborder')
@@ -53,8 +48,8 @@ function removeSigns() {
     if(custom.value.length ==0 && customWarning){
         customWarning = custom_div.classList.toggle('warnborder');
     }
-
 }
+
 function updateTip(event) {
     custom.value =""
     let percent = this.innerText

@@ -1,0 +1,52 @@
+@import './variables';
+
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+html{
+    width: 100vw;
+    height: 100vh;
+    
+}
+body {
+    font-family: "Space Mono", monospace;
+    width: 100%;
+    height: 100%;
+    background-color: $light-grayish-cyan;
+    @media (min-width: $tablet) {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+}
+
+// header
+.header{
+    background-image: url(../images/logo.svg);
+    min-height: 8rem;
+    background-repeat: no-repeat;
+    background-position: center;
+    
+}
+
+// footer
+@media (min-width: $tablet) {
+    .header{
+        margin-top: 1rem;
+    }
+    footer{
+        margin-bottom: 1rem;
+    }
+}
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
