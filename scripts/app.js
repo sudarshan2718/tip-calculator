@@ -175,7 +175,7 @@ function peopleSigns(){
                 }
             }  else if (peopleValue < 0) {
                 // flag error
-                peoplewarning_message.innerHTML="can't be negative"
+                peoplewarning_message.innerHTML="its a negative"
                 peoplewarning_message.style.display="inline"
                 if (peopleSuccess) {
                     peopleSuccess = peoplegroup.classList.toggle('successborder');
@@ -197,7 +197,7 @@ function peopleSigns(){
             }
         }
     }else{
-        peoplewarning_message.style.display="inline"
+        peoplewarning_message.style.display="none"
         if (peopleSuccess) {
             peopleSuccess = peoplegroup.classList.toggle('successborder');
         }
