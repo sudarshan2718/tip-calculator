@@ -30,8 +30,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [my solution](https://github.com/SUDARSHANVEMARAPU/tip-calculator)
-- Live Site URL: [live site](https://sudarshanvemarapu.github.io/tip-calculator/)
+- Solution URL: [my solution](https://github.com/sudarshan2718/tip-calculator)
+- Live Site URL: [live site](https://sudarshan2718.github.io/tip-calculator/)
 
 ## My process
 
